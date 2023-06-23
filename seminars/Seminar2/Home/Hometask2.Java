@@ -44,6 +44,9 @@ public class Hometask2 {
         System.out.println(lastIndex);
         System.out.println(newStrings);
     }
+
+    
+
 }
 
 
