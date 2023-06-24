@@ -7,9 +7,9 @@
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
-import org.json.JSONArray;
+/* import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
+import org.json.JSONObject; */
 
 public class Hometask2 {
     public static void main(String[] args) {
