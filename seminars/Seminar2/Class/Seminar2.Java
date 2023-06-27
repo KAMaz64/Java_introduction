@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Serminar2 {
+public class Seminar2 {
 
     public static void main(String[] args) {
         String str = "!Hello World! ";
