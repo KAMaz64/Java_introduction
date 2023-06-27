@@ -12,6 +12,7 @@ package Seminar3;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Collections;
+import static java.lang.Math.*;
 
 public class Hometask3 {
     public static void main(String[] args) {
@@ -43,7 +44,7 @@ public class Hometask3 {
         for (Integer i : list) {
             if (i < min) min = i;
             sum += i;
-            avg = sum / list.size();
+            avg = Math.round(sum / list.size());
         }
         System.out.println("Максимальное значение: " + Collections.max(list));
         System.out.println("Минимальное значение: " + Collections.min(list));
