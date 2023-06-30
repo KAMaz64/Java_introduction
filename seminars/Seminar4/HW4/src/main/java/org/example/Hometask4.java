@@ -1,13 +1,11 @@
 /*Организовать ввод и хранение данных пользователей. ФИО возраст и пол
 вывод в формате Фамилия И.О. возраст пол
-добавить возможность выхода или вывода списка отсортированного по возрасту!)
+добавить возможность выхода или вывода списка отсортированного по возрасту
 *реализовать сортировку по возрасту с использованием индексов
 *реализовать сортировку по возрасту и полу с использованием индексов
  */
 
-package org.example;
-
-import org.example.user.User;
+package example;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -15,7 +13,7 @@ import java.util.ArrayList;
 public class Hometask4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList users = new ArrayList<>();
+        ArrayList<org.example.User> users = new ArrayList<>();
         // Ввод данных пользователей
         while (true) {
             System.out.println("Введите ФИО (Фамилия Имя Отчество):");
@@ -25,7 +23,7 @@ public class Hometask4 {
             System.out.println("Введите пол (М/Ж):");
             char gender = scanner.nextLine().charAt(0);
 
-            User user = new User(fullName, age, gender);
+            org.example.User user = new org.example.User(fullName, age, gender);
             users.add(user);
 
             System.out.println("Продолжить ввод данных? (да/нет)");
@@ -64,7 +62,7 @@ public class Hometask4 {
             }
 
             for (int index : indexes) {
-                User user = users.get(index);
+                org.example.User user = users.get(index);
                 System.out.println(user.getFormattedInfo());
             }
         }
@@ -78,8 +76,8 @@ public class Hometask4 {
 
             for (int i = 0; i < users.size() - 1; i++) {
                 for (int j = 0; j < users.size() - 1 - i; j++) {
-                    User user1 = users.get(indexes[j]);
-                    User user2 = users.get(indexes[j + 1]);
+                    org.example.User user1 = users.get(indexes[j]);
+                    org.example.User user2 = users.get(indexes[j + 1]);
                     if (user1.getAge() > user2.getAge() || (user1.getAge() == user2.getAge() && user1.getGender() > user2.getGender())) {
                         int temp = indexes[j];
                         indexes[j] = indexes[j + 1];
@@ -89,7 +87,7 @@ public class Hometask4 {
             }
 
             for (int index : indexes) {
-                User user = users.get(index);
+                org.example.User user = users.get(index);
                 System.out.println(user.getFormattedInfo());
             }
         }
