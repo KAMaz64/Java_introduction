@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "C:\\Users\\user\\Desktop\\GIT_EDUCATION\\Java\\seminars\\Seminar2\\Home\\Extra1\\lib\\json-20230618.jar"
+    ]
+}
